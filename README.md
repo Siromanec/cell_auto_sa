@@ -1,5 +1,6 @@
 ﻿# cell_auto_sa
 Authors: Ivanov, Klym, Folvarochna, Omelchuk (Olesia), Kocherkevych \
+Variant B \
 Task1.nlogo - task1 \
 life.ipynb - generation of figures and formatting \
 results - the BS results \
