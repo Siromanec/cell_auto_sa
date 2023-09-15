@@ -136,7 +136,7 @@ GRAPHICS-WINDOW
 1
 1
 ticks
-144.0
+60.0
 
 SLIDER
 120
@@ -383,10 +383,21 @@ INPUTBOX
 719
 685
 file
-cell_auto/figures_size6.csv
+figures_size_4.csv
 1
 0
 String
+
+MONITOR
+34
+424
+199
+470
+NIL
+count patches with [living?]
+17
+1
+11
 
 @#$#@#$#@
 ## WHAT IS IT?
@@ -812,7 +823,61 @@ setup-random repeat 20 [ go ]
       <value value="50"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="file">
-      <value value="&quot;cell_auto/figures_size6.csv&quot;"/>
+      <value value="&quot;figures_size_6.csv&quot;"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="run-for-5" repetitions="500" runMetricsEveryStep="true">
+    <setup>setup-csv</setup>
+    <go>go-csv</go>
+    <timeLimit steps="1000"/>
+    <metric>count patches with [living?]</metric>
+    <enumeratedValueSet variable="fgcolor">
+      <value value="123"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="initial-density">
+      <value value="35"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="steady-state-threshold">
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="bgcolor">
+      <value value="79"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="terminate-after-at-least-nticks">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="window-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="file">
+      <value value="&quot;figures_size_5.csv&quot;"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="run-for-4" repetitions="500" runMetricsEveryStep="true">
+    <setup>setup-csv</setup>
+    <go>go-csv</go>
+    <timeLimit steps="1000"/>
+    <metric>count patches with [living?]</metric>
+    <enumeratedValueSet variable="fgcolor">
+      <value value="123"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="initial-density">
+      <value value="35"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="steady-state-threshold">
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="bgcolor">
+      <value value="79"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="terminate-after-at-least-nticks">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="window-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="file">
+      <value value="&quot;figures_size_4.csv&quot;"/>
     </enumeratedValueSet>
   </experiment>
 </experiments>
